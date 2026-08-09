@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://utvs6dgi35sq"]
+
+[ext_resource type="Material" uid="uid://evs51fbaqlwy" path="res://materials/input_note.tres" id="1_14lsm"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ctq55"]
+orientation = 1
+
+[node name="InputScene" type="Node3D" unique_id=885263505]
+metadata/Note = ""
+metadata/Active = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=575279800]
+transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 0.4, 0, 0, 0)
+material_override = ExtResource("1_14lsm")
+mesh = SubResource("QuadMesh_ctq55")

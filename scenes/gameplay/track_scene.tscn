@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://i3qbqcybrqis"]
+
+[ext_resource type="PackedScene" uid="uid://dqy4x5stwf0qq" path="res://scenes/gameplay/road_scene.tscn" id="1_27fms"]
+[ext_resource type="Script" uid="uid://dsaclp1npa6bl" path="res://scripts/gameplay/inputs.gd" id="2_gm5id"]
+[ext_resource type="PackedScene" uid="uid://utvs6dgi35sq" path="res://scenes/gameplay/input_scene.tscn" id="2_o4c7s"]
+[ext_resource type="AudioStream" uid="uid://bs41nskiihkt7" path="res://songs/music/Trick Room.mp3" id="4_piljl"]
+
+[node name="TrackScene" type="Node3D" unique_id=518582178]
+
+[node name="BottomRoad" parent="." unique_id=1153227223 instance=ExtResource("1_27fms")]
+
+[node name="TopRoad" parent="." unique_id=620024251 instance=ExtResource("1_27fms")]
+transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0, 1.2, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=522783877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0.5)
+fov = 60.0
+
+[node name="Inputs" type="Node3D" parent="." unique_id=1895521305]
+script = ExtResource("2_gm5id")
+
+[node name="D" parent="Inputs" unique_id=885263505 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -1)
+metadata/Note = "gp_d"
+
+[node name="F" parent="Inputs" unique_id=691386298 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, -1)
+metadata/Note = "gp_f"
+
+[node name="J" parent="Inputs" unique_id=2074553999 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, -1)
+metadata/Note = "gp_j"
+
+[node name="K" parent="Inputs" unique_id=124195200 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, -1)
+metadata/Note = "gp_k"
+
+[node name="E" parent="Inputs" unique_id=2091537598 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, -0.6, 1.2, -1)
+metadata/Note = "gp_e"
+
+[node name="R" parent="Inputs" unique_id=2142348599 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, -0.2, 1.2, -1)
+metadata/Note = "gp_r"
+
+[node name="U" parent="Inputs" unique_id=292266071 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0.2, 1.2, -1)
+metadata/Note = "gp_u"
+
+[node name="I" parent="Inputs" unique_id=375516438 instance=ExtResource("2_o4c7s")]
+transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0.6, 1.2, -1)
+metadata/Note = "gp_i"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=401562085]
+stream = ExtResource("4_piljl")
+autoplay = true
+parameters/looping = true

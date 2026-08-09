@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dqy4x5stwf0qq"]
+
+[ext_resource type="Material" uid="uid://dx7qfnr4gvlws" path="res://materials/gameplay/diagonal_fade/fading_diagonal_clean.tres" id="1_17wfj"]
+[ext_resource type="Material" uid="uid://juqisewpl2nl" path="res://materials/gameplay/lines/clean_line.tres" id="1_ufl1x"]
+[ext_resource type="Material" uid="uid://dnog1lyto32u0" path="res://materials/gameplay/lines/clean_line_bold.tres" id="2_72u8d"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_iwmn8"]
+orientation = 1
+
+[node name="RoadScene" type="Node3D" unique_id=1153227223]
+
+[node name="Lines" type="Node3D" parent="." unique_id=1444381596]
+
+[node name="CenterLine" type="MeshInstance3D" parent="Lines" unique_id=2162585]
+transform = Transform3D(0.025, 0, 0, 0, 1, 0, 0, 0, 12, 0, 0, -6)
+mesh = SubResource("QuadMesh_iwmn8")
+surface_material_override/0 = ExtResource("1_ufl1x")
+
+[node name="LeftLine" type="MeshInstance3D" parent="Lines" unique_id=1159860803]
+transform = Transform3D(0.025, 0, 0, 0, 1, 0, 0, 0, 12, -0.4, 0, -6)
+mesh = SubResource("QuadMesh_iwmn8")
+surface_material_override/0 = ExtResource("1_ufl1x")
+
+[node name="RightLine" type="MeshInstance3D" parent="Lines" unique_id=522675385]
+transform = Transform3D(0.025, 0, 0, 0, 1, 0, 0, 0, 12, 0.4, 0, -6)
+mesh = SubResource("QuadMesh_iwmn8")
+surface_material_override/0 = ExtResource("1_ufl1x")
+
+[node name="Boundary" type="Node3D" parent="." unique_id=547395379]
+
+[node name="LeftLine" type="MeshInstance3D" parent="Boundary" unique_id=1827616882]
+transform = Transform3D(0.1, 0, 0, 0, 1, 0, 0, 0, 12, -0.8, 0, -6)
+mesh = SubResource("QuadMesh_iwmn8")
+surface_material_override/0 = ExtResource("2_72u8d")
+
+[node name="LeftLine2" type="MeshInstance3D" parent="Boundary" unique_id=1674228334]
+transform = Transform3D(0.1, 0, 0, 0, 1, 0, 0, 0, 12, 0.8, 0, -6)
+mesh = SubResource("QuadMesh_iwmn8")
+surface_material_override/0 = ExtResource("2_72u8d")
+
+[node name="Plane" type="Node3D" parent="." unique_id=1963912656]
+
+[node name="RightPlane" type="MeshInstance3D" parent="Plane" unique_id=555877026]
+transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 12, 0.4, 0, -6)
+mesh = SubResource("QuadMesh_iwmn8")
+surface_material_override/0 = ExtResource("1_17wfj")
+
+[node name="LeftPlane" type="MeshInstance3D" parent="Plane" unique_id=1889258051]
+transform = Transform3D(-0.8, 8.742278e-08, 0, -6.9938224e-08, -1, 0, 0, 0, 12, -0.4, 0, -6)
+mesh = SubResource("QuadMesh_iwmn8")
+surface_material_override/0 = ExtResource("1_17wfj")
