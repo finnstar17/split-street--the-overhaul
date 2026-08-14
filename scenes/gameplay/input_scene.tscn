@@ -1,15 +1,50 @@
 [gd_scene format=3 uid="uid://utvs6dgi35sq"]
 
 [ext_resource type="Material" uid="uid://evs51fbaqlwy" path="res://materials/input_note.tres" id="1_14lsm"]
+[ext_resource type="Material" uid="uid://im6bhgt4awtt" path="res://materials/gameplay/lines/clean_line_plain.tres" id="2_6y85p"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ctq55"]
+orientation = 1
+
+[sub_resource type="Gradient" id="Gradient_6y85p"]
+colors = PackedColorArray(0, 0, 0, 1, 0.75, 0.75, 0.75, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_66ft2"]
+gradient = SubResource("Gradient_6y85p")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_od28s"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = SubResource("GradientTexture2D_66ft2")
+uv1_offset = Vector3(0, 0.008, 0)
+
+[sub_resource type="QuadMesh" id="QuadMesh_66ft2"]
 orientation = 1
 
 [node name="InputScene" type="Node3D" unique_id=885263505]
 metadata/Note = ""
 metadata/Active = false
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=575279800]
+[node name="HitMesh" type="MeshInstance3D" parent="." unique_id=575279800]
 transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 0.4, 0, 0, 0)
 material_override = ExtResource("1_14lsm")
 mesh = SubResource("QuadMesh_ctq55")
+
+[node name="GlowMesh" type="MeshInstance3D" parent="." unique_id=764458745]
+transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 4, 0, 0, -0.5)
+material_override = SubResource("StandardMaterial3D_od28s")
+mesh = SubResource("QuadMesh_ctq55")
+
+[node name="BackLine" type="MeshInstance3D" parent="." unique_id=410923752]
+transform = Transform3D(-2.1855695e-09, 0, 0.4, 0, 1, 0, -0.05, 0, -1.7484556e-08, 0, 0, 0.2)
+material_override = ExtResource("2_6y85p")
+mesh = SubResource("QuadMesh_66ft2")
+
+[node name="FrontLine" type="MeshInstance3D" parent="." unique_id=1572358551]
+transform = Transform3D(-2.1855695e-09, 0, 0.4, 0, 1, 0, -0.05, 0, -1.7484556e-08, 0, 0, -0.2)
+material_override = ExtResource("2_6y85p")
+mesh = SubResource("QuadMesh_66ft2")

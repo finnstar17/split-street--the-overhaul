@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b8skf4v2n6a6i"]
+
+[ext_resource type="Script" uid="uid://bqgyybkaqxbje" path="res://scripts/gameplay/note_scene.gd" id="1_ieleu"]
+[ext_resource type="ArrayMesh" uid="uid://cbcwtumq5ulav" path="res://models/custom_note_template.obj" id="1_mlvxp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlvxp"]
+shading_mode = 0
+
+[sub_resource type="QuadMesh" id="QuadMesh_ieleu"]
+orientation = 1
+
+[node name="NoteScene" type="Node3D" unique_id=1713396208]
+script = ExtResource("1_ieleu")
+
+[node name="CustomNote" type="MeshInstance3D" parent="." unique_id=1234776796]
+transform = Transform3D(0.133, 0, 0, 0, 1, 0, 0, 0, 0.133, 0, 0, 0)
+visible = false
+material_override = SubResource("StandardMaterial3D_mlvxp")
+mesh = ExtResource("1_mlvxp")
+
+[node name="PlainNote" type="MeshInstance3D" parent="." unique_id=869472144]
+transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 0.4, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_mlvxp")
+mesh = SubResource("QuadMesh_ieleu")

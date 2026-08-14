@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bqgmjlm0j14gi"]
+
+[ext_resource type="Texture2D" uid="uid://con4xbakvoud6" path="res://images/game_textures/line_texture_plain.png" id="1_okldf"]
+[ext_resource type="Script" uid="uid://dq0548dvwwv21" path="res://scripts/gameplay/bar_scene.gd" id="1_xa8bc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xa8bc"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(0.5, 0.5, 0.5, 1)
+albedo_texture = ExtResource("1_okldf")
+heightmap_scale = 16.0
+uv1_scale = Vector3(0.75, 1, 1)
+uv1_offset = Vector3(0, 0.002, 0)
+texture_filter = 5
+
+[sub_resource type="QuadMesh" id="QuadMesh_3fnp3"]
+orientation = 1
+
+[node name="BarScene" type="Node3D" unique_id=1109388675]
+script = ExtResource("1_xa8bc")
+
+[node name="Line" type="MeshInstance3D" parent="." unique_id=1892365929]
+transform = Transform3D(-2.1855695e-09, 0, 1.6, 0, 1, 0, -0.05, 0, -6.9938224e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_xa8bc")
+mesh = SubResource("QuadMesh_3fnp3")

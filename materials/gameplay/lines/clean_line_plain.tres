@@ -1,6 +1,6 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://juqisewpl2nl"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://im6bhgt4awtt"]
 
-[ext_resource type="Texture2D" uid="uid://c132005wf6dkv" path="res://images/game_textures/line_texture_fade.png" id="1_onhe3"]
+[ext_resource type="Texture2D" uid="uid://con4xbakvoud6" path="res://images/game_textures/line_texture_plain.png" id="1_82rvh"]
 
 [resource]
 resource_local_to_scene = true
@@ -9,7 +9,7 @@ blend_mode = 1
 cull_mode = 2
 shading_mode = 0
 albedo_color = Color(0.5, 0.5, 0.5, 1)
-albedo_texture = ExtResource("1_onhe3")
+albedo_texture = ExtResource("1_82rvh")
 heightmap_scale = 16.0
 uv1_scale = Vector3(0.75, 1, 1)
 uv1_offset = Vector3(0, 0.002, 0)

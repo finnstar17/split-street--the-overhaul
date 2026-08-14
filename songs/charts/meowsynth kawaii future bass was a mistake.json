@@ -1,7 +1,7 @@
 {
 	"title": "meowsynth kawaii future bass was a mistake",
 	"artist": "AZALI",
-	"file": "res://music_related/music/meowsynth kawaii future bass was a mistake.mp3",
+	"file": "res://songs/music/meowsynth kawaii future bass was a mistake.mp3",
 	"cover": "res://images/song_covers/meowsynth kawaii future bass was a mistake.jpg",
 	"bpm": 166.0,
 	"spacing": 4.0,
@@ -9,8 +9,14 @@
 	"note_data": {
 		"1": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "length": 15.0},
-				{"pos": 0.0, "line": 3.0, "plane": 1.0}
+				{"pos": 0.0, "line": 1.0, "plane": 2.0},
+				{"pos": 1.0, "line": 2.0, "plane": 1.0},
+				{"pos": 2.0, "line": 3.0, "plane": 1.0},
+				{"pos": 3.0, "line": 4.0, "plane": 1.0},
+				{"pos": 4.0, "line": 4.0, "plane": 2.0},
+				{"pos": 5.0, "line": 3.0, "plane": 1.0},
+				{"pos": 6.0, "line": 2.0, "plane": 2.0},
+				{"pos": 7.0, "line": 1.0, "plane": 2.0}
 			]
 		},
 		"2": {

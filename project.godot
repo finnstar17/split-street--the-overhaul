@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="SPLIT STREET: THE OVERHAUL"
-run/main_scene="uid://i3qbqcybrqis"
+run/main_scene="uid://bj0f2ajwnvvib"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[display]
+[autoload]
 
-window/size/mode=2
+SettingsAutoload="*uid://b4ut3wg17m34v"
+TrackAutoload="*uid://dwn7ukrl1pqkp"
 
 [input]
 

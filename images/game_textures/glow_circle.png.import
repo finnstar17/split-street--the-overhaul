@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c132005wf6dkv"
-path.s3tc="res://.godot/imported/line_texture_fade.png-836a814434b7aa3d874b05c5dd2b8488.s3tc.ctex"
+uid="uid://jftv7kn08drl"
+path.s3tc="res://.godot/imported/glow_circle.png-42e6f80a892e0fb1bb7690d094d23dd5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://images/game_textures/line_texture_fade.png"
-dest_files=["res://.godot/imported/line_texture_fade.png-836a814434b7aa3d874b05c5dd2b8488.s3tc.ctex"]
+source_file="res://images/game_textures/glow_circle.png"
+dest_files=["res://.godot/imported/glow_circle.png-42e6f80a892e0fb1bb7690d094d23dd5.s3tc.ctex"]
 
 [params]
 
