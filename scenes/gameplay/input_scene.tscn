@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://utvs6dgi35sq"]
 
 [ext_resource type="Material" uid="uid://evs51fbaqlwy" path="res://materials/input_note.tres" id="1_14lsm"]
+[ext_resource type="Script" uid="uid://rnmhylid63sy" path="res://scripts/gameplay/input_table.gd" id="1_66ft2"]
 [ext_resource type="Material" uid="uid://im6bhgt4awtt" path="res://materials/gameplay/lines/clean_line_plain.tres" id="2_6y85p"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ctq55"]
@@ -26,6 +27,7 @@ uv1_offset = Vector3(0, 0.008, 0)
 orientation = 1
 
 [node name="InputScene" type="Node3D" unique_id=885263505]
+script = ExtResource("1_66ft2")
 metadata/Note = ""
 metadata/Active = false
 

@@ -1,5 +1,7 @@
 extends Node3D
 
+@export var collected = false
+
 var xpos = 0
 var zpos = 0
 var type = 1

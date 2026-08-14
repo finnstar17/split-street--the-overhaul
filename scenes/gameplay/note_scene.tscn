@@ -6,8 +6,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlvxp"]
 shading_mode = 0
 
-[sub_resource type="QuadMesh" id="QuadMesh_ieleu"]
-orientation = 1
+[sub_resource type="BoxMesh" id="BoxMesh_ieleu"]
 
 [node name="NoteScene" type="Node3D" unique_id=1713396208]
 script = ExtResource("1_ieleu")
@@ -19,6 +18,6 @@ material_override = SubResource("StandardMaterial3D_mlvxp")
 mesh = ExtResource("1_mlvxp")
 
 [node name="PlainNote" type="MeshInstance3D" parent="." unique_id=869472144]
-transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 0.4, 0, 0, 0)
+transform = Transform3D(0.4, 0, 0, 0, 0.03, 0, 0, 0, 0.4, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_mlvxp")
-mesh = SubResource("QuadMesh_ieleu")
+mesh = SubResource("BoxMesh_ieleu")

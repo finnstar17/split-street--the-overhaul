@@ -11,36 +11,59 @@ var old_bar_pos = 0
 var bar_count = 1
 var bars = []
 
+var old_song_pos = TrackAutoload.global_pos
 var song_pos = 0
 
 func _ready():
 	if not chart_data:
 		return
 	
-	for i in range(12):
-		create_bar(bottomBars)
-		create_bar(topBars)
-		old_bar_pos = bottomBars.get_node(str(bar_count)).position.z
-		bar_count += 1
+	for i in range(4):
+		add_bar()
 
 	player.stream = load(chart_data["file"])
 	timer.start()
 
-func _process(_delta):
+func _process(delta):
 	get_delta()
+	
+	var song_delta = TrackAutoload.global_pos - old_song_pos
+	var real_delta = 0
+	if song_delta > 0:
+		real_delta = song_delta
+	else:
+		real_delta = delta
+	var movement = real_delta * TrackAutoload.speed
+	
+	bottomBars.position.z += movement
+	topBars.position.z += movement
+
+	var pos = fmod(bottomBars.position.z, ((60 / float(TrackAutoload.bpm)) * 4 * TrackAutoload.speed))
+	if pos >= 0 and bar_count <= chart_data["note_data"].size():
+		add_bar()
+
+	old_song_pos = TrackAutoload.global_pos
+
+func add_bar():
+	create_bar(bottomBars)
+	create_bar(topBars)
+	old_bar_pos = bottomBars.get_node(str(bar_count)).position.z
+	bar_count += 1
 
 func create_bar(bar : Node3D):
-	var new_bar = bar_scene.instantiate()
 	var note_data = chart_data["note_data"]
-	new_bar.name = str(bar_count)
-	new_bar.note_data = note_data[str(bar_count)]
-	new_bar.global_position.z = old_bar_pos - ((60.0 / float(TrackAutoload.bpm)) * 4.0 * TrackAutoload.speed)
+	var bar_data = note_data[str(bar_count)]
+	if bar_data:
+		var new_bar = bar_scene.instantiate()
+		new_bar.name = str(bar_count)
+		new_bar.note_data = note_data[str(bar_count)]
+		new_bar.global_position.z = old_bar_pos - ((60 / float(TrackAutoload.bpm)) * 4 * TrackAutoload.speed)
 	
-	if bar_count == 1:
-		new_bar.global_position.z -= TrackAutoload.speed * 2
+		if bar_count == 1:
+			new_bar.global_position.z -= TrackAutoload.speed * 2
 
-	bar.add_child(new_bar)
-	bars.append(new_bar)
+		bar.add_child(new_bar)
+		bars.append(new_bar)
 
 func get_delta():
 	var base_pos = player.get_playback_position()
@@ -50,7 +73,7 @@ func get_delta():
 	song_pos = max(song_pos, time)
 	TrackAutoload.global_pos = song_pos
 
-
 func _on_timer_timeout() -> void:
 	player.play()
+	TrackAutoload.time_start = Time.get_ticks_msec()
 	print("playing")

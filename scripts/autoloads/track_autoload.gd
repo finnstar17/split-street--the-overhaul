@@ -2,9 +2,10 @@ extends Node
 
 var current_track = ""
 
-var speed = 8
+var speed = 32	
 var bpm = 0
 var global_pos = 0
+var time_start = 0
 
 # chart loader
 func load_chart(path : String):

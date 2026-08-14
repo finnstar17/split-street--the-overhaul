@@ -62,7 +62,7 @@ fov = 60.0
 
 [node name="Timer" type="Timer" parent="." unique_id=681057442]
 process_callback = 0
-wait_time = 1.8499999999999999
+wait_time = 1.88
 one_shot = true
 autostart = true
 
