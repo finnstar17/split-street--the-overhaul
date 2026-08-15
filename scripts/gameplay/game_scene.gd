@@ -7,6 +7,6 @@ func _ready():
 
     var new_track = track_scene.instantiate()
     
-    TrackAutoload.current_track = "res://songs/charts/Trick Room.json"
+    TrackAutoload.current_track = "res://songs/charts/meowsynth kawaii future bass was a mistake.json"
     add_child(new_track)
 

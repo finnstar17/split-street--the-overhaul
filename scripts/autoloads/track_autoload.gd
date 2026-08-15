@@ -2,10 +2,11 @@ extends Node
 
 var current_track = ""
 
-var speed = 32	
 var bpm = 0
 var global_pos = 0
 var time_start = 0
+
+var inputs = []
 
 # chart loader
 func load_chart(path : String):
@@ -18,3 +19,12 @@ func load_chart(path : String):
 		if error == OK:
 			bpm = json.data["bpm"]
 			return json.data
+
+func reset_vars():
+	current_track = ""
+
+	bpm = 0
+	global_pos = 0
+	time_start = 0
+
+	inputs = []

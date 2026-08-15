@@ -30,6 +30,8 @@ orientation = 1
 script = ExtResource("1_66ft2")
 metadata/Note = ""
 metadata/Active = false
+metadata/Line = 0
+metadata/Plane = 0
 
 [node name="HitMesh" type="MeshInstance3D" parent="." unique_id=575279800]
 transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 0.4, 0, 0, 0)

@@ -18,7 +18,7 @@ func _ready():
 	if not chart_data:
 		return
 	
-	for i in range(4):
+	for i in range(chart_data["note_data"].size()):
 		add_bar()
 
 	player.stream = load(chart_data["file"])
@@ -33,14 +33,10 @@ func _process(delta):
 		real_delta = song_delta
 	else:
 		real_delta = delta
-	var movement = real_delta * TrackAutoload.speed
+	var movement = real_delta * SettingsAutoload.speed
 	
 	bottomBars.position.z += movement
 	topBars.position.z += movement
-
-	var pos = fmod(bottomBars.position.z, ((60 / float(TrackAutoload.bpm)) * 4 * TrackAutoload.speed))
-	if pos >= 0 and bar_count <= chart_data["note_data"].size():
-		add_bar()
 
 	old_song_pos = TrackAutoload.global_pos
 
@@ -57,10 +53,10 @@ func create_bar(bar : Node3D):
 		var new_bar = bar_scene.instantiate()
 		new_bar.name = str(bar_count)
 		new_bar.note_data = note_data[str(bar_count)]
-		new_bar.global_position.z = old_bar_pos - ((60 / float(TrackAutoload.bpm)) * 4 * TrackAutoload.speed)
+		new_bar.global_position.z = old_bar_pos - ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed)
 	
 		if bar_count == 1:
-			new_bar.global_position.z -= TrackAutoload.speed * 2
+			new_bar.global_position.z -= SettingsAutoload.speed * 4
 
 		bar.add_child(new_bar)
 		bars.append(new_bar)

@@ -16,18 +16,26 @@ script = ExtResource("2_gm5id")
 [node name="D" parent="Roads/BottomRoad" unique_id=885263505 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -1)
 metadata/Note = "gp_d"
+metadata/Line = 1
+metadata/Plane = 1
 
 [node name="F" parent="Roads/BottomRoad" unique_id=691386298 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, -1)
 metadata/Note = "gp_f"
+metadata/Line = 2
+metadata/Plane = 1
 
 [node name="J" parent="Roads/BottomRoad" unique_id=2074553999 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, -1)
 metadata/Note = "gp_j"
+metadata/Line = 3
+metadata/Plane = 1
 
 [node name="K" parent="Roads/BottomRoad" unique_id=124195200 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, -1)
 metadata/Note = "gp_k"
+metadata/Line = 4
+metadata/Plane = 1
 
 [node name="Bars" type="Node3D" parent="Roads/BottomRoad" unique_id=592224290]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
@@ -38,18 +46,26 @@ transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0, 1
 [node name="E" parent="Roads/TopRoad" unique_id=2091537598 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, -1)
 metadata/Note = "gp_e"
+metadata/Line = 1
+metadata/Plane = 2
 
 [node name="R" parent="Roads/TopRoad" unique_id=2142348599 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, -1)
 metadata/Note = "gp_r"
+metadata/Line = 2
+metadata/Plane = 2
 
 [node name="U" parent="Roads/TopRoad" unique_id=292266071 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, -1)
 metadata/Note = "gp_u"
+metadata/Line = 3
+metadata/Plane = 2
 
 [node name="I" parent="Roads/TopRoad" unique_id=375516438 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -1)
 metadata/Note = "gp_i"
+metadata/Line = 4
+metadata/Plane = 2
 
 [node name="Bars" type="Node3D" parent="Roads/TopRoad" unique_id=405664441]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
@@ -62,7 +78,7 @@ fov = 60.0
 
 [node name="Timer" type="Timer" parent="." unique_id=681057442]
 process_callback = 0
-wait_time = 1.88
+wait_time = 3.8699999999999997
 one_shot = true
 autostart = true
 

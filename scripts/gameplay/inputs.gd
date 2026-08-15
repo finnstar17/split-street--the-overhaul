@@ -12,16 +12,13 @@ func _ready():
 	for input in bottomInputs:
 		if input.name.length() == 1:
 			inputs.append(input)
-			print("yess")
-
 	for input in topInputs:
 		if input.name.length() == 1:
 			inputs.append(input)
-			print("yess")
-
 	for input in inputs:
-		print(input.get_meta("Note"))
 		notes[input.get_meta("Note")] = input
+
+	TrackAutoload.inputs = inputs
 
 func _input(event):
 	if event is InputEventKey:
@@ -34,9 +31,11 @@ func _input(event):
 
 			if event.pressed:
 				print(Time.get_ticks_msec())
-				set_color(meshes, 0.5)
+				set_color(meshes, 0.6)
+				note.set_meta("active", true)
 			else:
-				set_color(meshes, 0)
+				set_color(meshes, 0.15)
+				note.set_meta("active", false)
 
 func set_color(meshes : Array, value : float):
 	for mesh in meshes:

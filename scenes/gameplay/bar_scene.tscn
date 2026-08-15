@@ -23,6 +23,9 @@ orientation = 1
 script = ExtResource("1_xa8bc")
 
 [node name="Line" type="MeshInstance3D" parent="." unique_id=1892365929]
-transform = Transform3D(-2.1855695e-09, 0, 1.6, 0, 1, 0, -0.05, 0, -6.9938224e-08, 0, 0, 0)
+transform = Transform3D(-8.742278e-09, 0, 1.6, 0, 1, 0, -0.2, 0, -6.9938224e-08, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_xa8bc")
+visibility_range_end = 8.0
+visibility_range_end_margin = 8.0
+visibility_range_fade_mode = 1
 mesh = SubResource("QuadMesh_3fnp3")

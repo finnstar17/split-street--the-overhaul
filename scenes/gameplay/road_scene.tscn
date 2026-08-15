@@ -29,12 +29,12 @@ mesh = SubResource("QuadMesh_iwmn8")
 [node name="Boundary" type="Node3D" parent="." unique_id=547395379]
 
 [node name="LeftLine" type="MeshInstance3D" parent="Boundary" unique_id=1827616882]
-transform = Transform3D(0.075, 0, 0, 0, 1, 0, 0, 0, 12, -0.8, 0, -6)
+transform = Transform3D(0.1, 0, 0, 0, 1, 0, 0, 0, 12, -0.8, 0, -6)
 material_override = ExtResource("2_72u8d")
 mesh = SubResource("QuadMesh_iwmn8")
 
 [node name="RightLine" type="MeshInstance3D" parent="Boundary" unique_id=1674228334]
-transform = Transform3D(0.075, 0, 0, 0, 1, 0, 0, 0, 12, 0.8, 0, -6)
+transform = Transform3D(0.1, 0, 0, 0, 1, 0, 0, 0, 12, 0.8, 0, -6)
 material_override = ExtResource("2_72u8d")
 mesh = SubResource("QuadMesh_iwmn8")
 
