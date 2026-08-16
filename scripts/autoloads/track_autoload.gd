@@ -8,6 +8,8 @@ var time_start = 0
 
 var inputs = []
 
+var current_id = 9000000
+
 # chart loader
 func load_chart(path : String):
 	if FileAccess.file_exists(path):

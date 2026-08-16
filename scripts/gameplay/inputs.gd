@@ -30,12 +30,15 @@ func _input(event):
 			var meshes = [hit_mesh, glow_mesh]
 
 			if event.pressed:
-				print(Time.get_ticks_msec())
 				set_color(meshes, 0.6)
 				note.set_meta("active", true)
+				note.press_time = (Time.get_ticks_msec()) / 1000.0
+				# print("pressed " + str(note.press_time))
+				note.check_notes()
 			else:
 				set_color(meshes, 0.15)
 				note.set_meta("active", false)
+				note.end_time = (Time.get_ticks_msec()) / 1000.0
 
 func set_color(meshes : Array, value : float):
 	for mesh in meshes:

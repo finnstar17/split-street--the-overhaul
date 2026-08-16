@@ -53,10 +53,10 @@ func create_bar(bar : Node3D):
 		var new_bar = bar_scene.instantiate()
 		new_bar.name = str(bar_count)
 		new_bar.note_data = note_data[str(bar_count)]
-		new_bar.global_position.z = old_bar_pos - ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed)
+		new_bar.position.z = old_bar_pos - ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed)
 	
 		if bar_count == 1:
-			new_bar.global_position.z -= SettingsAutoload.speed * 4
+			new_bar.position.z += (SettingsAutoload.speed * -4) + ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed)
 
 		bar.add_child(new_bar)
 		bars.append(new_bar)
