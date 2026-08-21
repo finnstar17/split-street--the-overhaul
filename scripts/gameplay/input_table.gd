@@ -1,15 +1,40 @@
 extends Node3D
 
+var note_effect = preload("res://scenes/effects/note_effect.tscn")
+
 var input_table = {}
 var note_table = {}
 var press_time = 0
 var end_time = 0
 
+var lowest_num = INF
+var nearest_node : Node3D = null
+var nearest_index = null
+
+var margin = 0.15
+
 func check_notes():
+	var delay = 0
+	lowest_num = INF
+	nearest_node = null
 	for note_index in input_table:
 		var real_time = input_table[note_index]
-		if (press_time >= real_time - 0.1) and (press_time <= real_time + 0.1):
-			var note = note_table[note_index]
-			if note:
-				note.collect()
-				print(real_time - press_time)
+		if (press_time <= real_time + margin) and (press_time >= real_time - margin):
+			if real_time < lowest_num:
+				lowest_num = real_time
+				nearest_node = note_table[note_index]
+				nearest_index = note_index
+				delay = real_time - press_time
+
+	if nearest_node:
+		nearest_node.collect()
+		note_func()
+
+		input_table.erase(nearest_index)
+		note_table.erase(nearest_index)
+
+		print(delay)
+
+func note_func():
+	var effect_instance : Node3D = note_effect.instantiate()
+	add_child(effect_instance)

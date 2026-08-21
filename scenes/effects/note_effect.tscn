@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://d0bckjgiw65m3"]
+
+[ext_resource type="Script" uid="uid://tkwhoirpe4fd" path="res://scripts/effects/note_effect.gd" id="1_51db2"]
+[ext_resource type="Material" uid="uid://0iq2u10be4cr" path="res://materials/unshaded_white.tres" id="2_m3eyl"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_22o6i"]
+inner_radius = 0.395
+outer_radius = 0.405
+rings = 4
+ring_segments = 4
+
+[sub_resource type="Gradient" id="Gradient_22o6i"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_l3dcr"]
+gradient = SubResource("Gradient_22o6i")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ufrd0"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = SubResource("GradientTexture2D_l3dcr")
+uv1_offset = Vector3(0, 0.008, 0)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ts8vu"]
+top_radius = 0.4
+bottom_radius = 0.4
+radial_segments = 4
+rings = 1
+cap_top = false
+cap_bottom = false
+
+[node name="NoteEffect" type="Node3D" unique_id=1640323344]
+script = ExtResource("1_51db2")
+
+[node name="Ring" type="Node3D" parent="." unique_id=2034790204]
+
+[node name="ScaleMesh" type="MeshInstance3D" parent="Ring" unique_id=1014585201]
+transform = Transform3D(0.4999245, 0, 0.4999245, 0, 0.707, 0, -0.4999245, 0, 0.4999245, 0, 0, 0)
+material_override = ExtResource("2_m3eyl")
+mesh = SubResource("TorusMesh_22o6i")
+
+[node name="FadeMesh" type="MeshInstance3D" parent="." unique_id=1314320813]
+transform = Transform3D(0.4999245, 0, 0.4999245, 0, 0.15, 0, -0.4999245, 0, 0.4999245, 0, 0.15, 0)
+material_override = SubResource("StandardMaterial3D_ufrd0")
+mesh = SubResource("CylinderMesh_ts8vu")

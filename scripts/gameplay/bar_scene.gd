@@ -8,16 +8,16 @@ func _ready():
 	var mili = 60 / float(TrackAutoload.bpm)
 	for note in note_data["notes"]:
 		var new_note : Node3D = null
-		if global_rotation.z == 0 and note["plane"] == 1:
+		if get_parent().get_meta("Plane") == 1 and note["plane"] == 1:
 			new_note = create_note(note)
-		elif global_rotation.z != 0 and note["plane"] == 2:
+		elif get_parent().get_meta("Plane") == 2 and note["plane"] == 2:
 			new_note = create_note(note)
 
 		for input in inputs:
 			if note["line"] == input.get_meta("Line") and note["plane"] == input.get_meta("Plane") and new_note != null:
 				TrackAutoload.current_id += 1
 				var note_index = str(TrackAutoload.current_id)
-				input.input_table[note_index] = (int(name) * 4 * mili) + (note["pos"] * mili * 0.5) + 4.2
+				input.input_table[note_index] = (int(name) * 4 * mili) + (note["pos"] * mili * 0.5) - 1.3
 				input.note_table[note_index] = new_note
 
 

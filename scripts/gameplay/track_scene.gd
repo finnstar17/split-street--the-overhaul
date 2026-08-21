@@ -12,9 +12,11 @@ var bar_count = 1
 var bars = []
 
 var old_song_pos = TrackAutoload.global_pos
-var song_pos = 0
 
 func _ready():
+	TrackAutoload.player = player
+	TrackAutoload.scene_start = Time.get_ticks_msec()
+
 	if not chart_data:
 		return
 	
@@ -25,7 +27,7 @@ func _ready():
 	timer.start()
 
 func _process(delta):
-	get_delta()
+	TrackAutoload.calc_pos_delta()
 	
 	var song_delta = TrackAutoload.global_pos - old_song_pos
 	var real_delta = 0
@@ -60,14 +62,6 @@ func create_bar(bar : Node3D):
 
 		bar.add_child(new_bar)
 		bars.append(new_bar)
-
-func get_delta():
-	var base_pos = player.get_playback_position()
-	var last_mix = AudioServer.get_time_since_last_mix()
-	var latency = AudioServer.get_output_latency()
-	var time = base_pos + last_mix - latency
-	song_pos = max(song_pos, time)
-	TrackAutoload.global_pos = song_pos
 
 func _on_timer_timeout() -> void:
 	player.play()

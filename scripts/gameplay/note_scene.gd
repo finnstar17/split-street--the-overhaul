@@ -7,7 +7,7 @@ var zpos = 0
 var type = 1
 
 func _ready():
-    global_position.x = xpos
+    position.x = xpos
     position.z = -zpos * (60 / float(TrackAutoload.bpm)) * SettingsAutoload.speed * 0.5
 
 func collect():

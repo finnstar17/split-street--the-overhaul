@@ -29,16 +29,18 @@ func _input(event):
 			var glow_mesh = note.get_node("GlowMesh")
 			var meshes = [hit_mesh, glow_mesh]
 
+			TrackAutoload.calc_pos_input()
+
 			if event.pressed:
 				set_color(meshes, 0.6)
 				note.set_meta("active", true)
-				note.press_time = (Time.get_ticks_msec()) / 1000.0
-				# print("pressed " + str(note.press_time))
+				note.press_time = TrackAutoload.input_time
+				#print("pressed " + str(note.press_time))
 				note.check_notes()
 			else:
 				set_color(meshes, 0.15)
 				note.set_meta("active", false)
-				note.end_time = (Time.get_ticks_msec()) / 1000.0
+				note.end_time = TrackAutoload.input_time
 
 func set_color(meshes : Array, value : float):
 	for mesh in meshes:
