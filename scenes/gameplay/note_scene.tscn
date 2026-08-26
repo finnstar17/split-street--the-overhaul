@@ -13,7 +13,7 @@ script = ExtResource("1_ieleu")
 transform = Transform3D(0.133, 0, 0, 0, 1, 0, 0, 0, 0.133, 0, 0, 0)
 visible = false
 material_override = ExtResource("2_3kiaw")
-visibility_range_end = 20.0
+visibility_range_end = 12.0
 visibility_range_end_margin = 4.0
 visibility_range_fade_mode = 1
 mesh = ExtResource("1_mlvxp")
@@ -21,7 +21,7 @@ mesh = ExtResource("1_mlvxp")
 [node name="PlainNote" type="MeshInstance3D" parent="." unique_id=869472144]
 transform = Transform3D(0.4, 0, 0, 0, 0.03, 0, 0, 0, 0.4, 0, 0, 0)
 material_override = ExtResource("2_3kiaw")
-visibility_range_end = 20.0
+visibility_range_end = 12.0
 visibility_range_end_margin = 4.0
 visibility_range_fade_mode = 1
 mesh = SubResource("BoxMesh_ieleu")

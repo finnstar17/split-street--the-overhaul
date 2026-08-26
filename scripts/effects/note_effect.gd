@@ -13,6 +13,10 @@ func _ready():
 	scale_tween.set_trans(Tween.TRANS_CUBIC)
 	scale_tween.tween_property(ring, "scale", Vector3(1.5, 1.5, 1.5), 0.5)
 
+	scale_tween.finished.connect(func():
+		queue_free()	
+	)
+
 func tween_fade(mesh : MeshInstance3D):
 	var material = mesh.material_override
 	var tween = create_tween()

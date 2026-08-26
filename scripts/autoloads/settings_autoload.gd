@@ -1,3 +1,3 @@
 extends Node
 
-var speed = 16
+var speed = 24    

@@ -11,7 +11,7 @@ var lowest_num = INF
 var nearest_node : Node3D = null
 var nearest_index = null
 
-var margin = 0.15
+var margin = 0.3
 
 func check_notes():
 	var delay = 0

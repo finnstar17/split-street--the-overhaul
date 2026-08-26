@@ -22,6 +22,7 @@ blend_mode = 1
 cull_mode = 2
 shading_mode = 0
 albedo_texture = SubResource("GradientTexture2D_l3dcr")
+uv1_scale = Vector3(1, 1.5, 1)
 uv1_offset = Vector3(0, 0.008, 0)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_ts8vu"]

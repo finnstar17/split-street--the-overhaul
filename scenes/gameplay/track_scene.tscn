@@ -12,7 +12,7 @@ script = ExtResource("1_vallb")
 script = ExtResource("2_gm5id")
 
 [node name="BottomRoad" parent="Roads" unique_id=1153227223 instance=ExtResource("1_27fms")]
-transform = Transform3D(0.9659258, 0.033782665, 0.25660482, 0, 0.9914449, -0.1305262, -0.25881904, 0.12607862, 0.9576622, 0, -0.6, 0)
+transform = Transform3D(1, 0, 0, 0, 0.99939084, -0.034899496, 0, 0.034899496, 0.99939084, 0, -0.65, 0)
 
 [node name="D" parent="Roads/BottomRoad" unique_id=885263505 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -1)
@@ -43,7 +43,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
 metadata/Plane = 1
 
 [node name="TopRoad" parent="Roads" unique_id=620024251 instance=ExtResource("1_27fms")]
-transform = Transform3D(0.9659258, -0.033782665, -0.25660482, 0, -0.9914449, 0.1305262, 0.25881904, 0.12607862, 0.9576622, 0, 0.6, 0)
+transform = Transform3D(1, -5.269677e-09, -1.5090382e-07, 0, -0.99939084, 0.034899496, 1.509958e-07, 0.034899496, 0.99939084, 0, 0.65, 0)
 
 [node name="E" parent="Roads/TopRoad" unique_id=2091537598 instance=ExtResource("2_o4c7s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -1)
@@ -80,8 +80,7 @@ fov = 60.0
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=401562085]
 
 [node name="Timer" type="Timer" parent="." unique_id=681057442]
-process_callback = 0
-wait_time = 3.87
+wait_time = 3.865
 one_shot = true
 autostart = true
 

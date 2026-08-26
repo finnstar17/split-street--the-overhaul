@@ -46,6 +46,6 @@ material_override = ExtResource("1_17wfj")
 mesh = SubResource("QuadMesh_iwmn8")
 
 [node name="LeftPlane" type="MeshInstance3D" parent="Plane" unique_id=1889258051]
-transform = Transform3D(-0.8, 8.742278e-08, 0, -6.9938224e-08, -1, 0, 0, 0, 12, -0.4, 0, -6)
+transform = Transform3D(-0.8, 0, 0, 0, 1, 0, 0, 0, 12, -0.4, 0, -6)
 material_override = ExtResource("1_17wfj")
 mesh = SubResource("QuadMesh_iwmn8")
