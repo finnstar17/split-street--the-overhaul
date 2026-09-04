@@ -1,3 +1,4 @@
 extends Node
 
-var speed = 24    
+var speed = 16
+var offset = 0.12

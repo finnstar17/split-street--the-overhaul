@@ -13,7 +13,7 @@ var bars = []
 
 var old_song_pos = TrackAutoload.global_pos
 
-var delay = 0
+var delay = 0.0
 var started = false
 
 func _ready():
@@ -32,11 +32,12 @@ func _ready():
 func _process(delta):
 	var move_add = 0
 
-	if player.playing and not started:
-		delay = player.get_playback_position() + AudioServer.get_time_to_next_mix() - AudioServer.get_output_latency()
+	if player.playing and not started and delay == 0.0:
 		started = true
+		delay = player.get_playback_position() + AudioServer.get_time_to_next_mix() - TrackAutoload.time_start
 		move_add = delay
-
+		print("delay : " + str(delay))
+		TrackAutoload.delay = delay
 
 	TrackAutoload.calc_pos_delta()
 	
@@ -48,8 +49,8 @@ func _process(delta):
 		real_delta = delta
 	var movement = real_delta * SettingsAutoload.speed
 	
-	bottomBars.position.z += movement + move_add
-	topBars.position.z += movement + move_add
+	bottomBars.position.z += movement - (move_add * SettingsAutoload.speed)
+	topBars.position.z += movement - (move_add * SettingsAutoload.speed)
 
 	old_song_pos = TrackAutoload.global_pos
 
@@ -69,7 +70,7 @@ func create_bar(bar : Node3D):
 		new_bar.position.z = old_bar_pos - ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed)
 	
 		if bar_count == 1:
-			new_bar.position.z += (SettingsAutoload.speed * -4) + ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed)
+			new_bar.position.z += (SettingsAutoload.speed * -4) + ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed) - (SettingsAutoload.offset * SettingsAutoload.speed)
 
 		bar.add_child(new_bar)
 		bars.append(new_bar)

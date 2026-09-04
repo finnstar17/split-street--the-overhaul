@@ -17,7 +17,7 @@ func _ready():
 			if note["line"] == input.get_meta("Line") and note["plane"] == input.get_meta("Plane") and new_note != null:
 				TrackAutoload.current_id += 1
 				var note_index = str(TrackAutoload.current_id)
-				input.input_table[note_index] = (int(name) * 4 * mili) + (note["pos"] * mili * 0.5) - 1.25
+				input.input_table[note_index] = (int(name) * 4 * mili) + (note["pos"] * mili * 0.5) - 1.333
 				input.note_table[note_index] = new_note
 
 

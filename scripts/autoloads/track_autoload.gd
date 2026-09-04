@@ -10,6 +10,7 @@ var time_start = 0
 var scene_start = 0
 var input_time = 0
 var real_input_time = 0
+var delay = 0
 
 var inputs = []
 

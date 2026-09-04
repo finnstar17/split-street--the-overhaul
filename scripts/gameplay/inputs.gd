@@ -3,6 +3,7 @@ extends Node3D
 @onready var bottomRoad = $BottomRoad
 @onready var topRoad = $TopRoad
 var notes = {}
+var debug_auto = false
 
 func _ready():
 	var bottomInputs = bottomRoad.get_children()
@@ -21,7 +22,7 @@ func _ready():
 	TrackAutoload.inputs = inputs
 
 func _input(event):
-	if event is InputEventKey:
+	if event is InputEventKey and debug_auto == false:
 		var key = "gp_" + event.as_text_keycode().to_lower()
 		if key in notes:
 			var note = notes[key]
@@ -36,11 +37,23 @@ func _input(event):
 				note.set_meta("active", true)
 				note.press_time = TrackAutoload.input_time
 				#print("pressed " + str(note.press_time))
-				note.check_notes()
+				note.check_notes(note.margin, 1)
 			else:
 				set_color(meshes, 0.15)
 				note.set_meta("active", false)
 				note.end_time = TrackAutoload.input_time
+
+func _process(_delta):
+	if debug_auto == true:
+		for key in notes:
+			var note = notes[key]
+			TrackAutoload.calc_pos_input()
+
+			note.set_meta("active", true)
+			note.press_time = TrackAutoload.input_time
+			#print("pressed " + str(note.press_time))
+			note.check_instant()
+		
 
 func set_color(meshes : Array, value : float):
 	for mesh in meshes:
