@@ -5,11 +5,11 @@
 	"cover": "res://images/song_covers/Trick Room.jpg",
 	"bpm": 174.0,
 	"spacing": 4.0,
-	"offset": 0.0,
+	"note_offset": 0.12,
+	"song_offset": 0.105,
 	"note_data": {
 		"1": {
-			"notes": [
-			]
+			"notes": []
 		},
 		"2": {
 			"notes": [
@@ -176,6 +176,71 @@
 				{"pos": 1.5, "line": 3.0, "plane": 2.0},
 				{"pos": 2.0, "line": 1.0, "plane": 1.0},
 				{"pos": 2.0, "line": 2.0, "plane": 1.0}
+			]
+		},
+		"18": {
+			"notes": [
+				{"pos": 0.0, "line": 2.0, "plane": 1.0},
+				{"pos": 0.0, "line": 3.0, "plane": 1.0},
+				{"pos": 2.0, "line": 1.0, "plane": 1.0, "length": 6.0},
+				{"pos": 2.0, "line": 1.0, "plane": 2.0, "length": 6.0},
+				{"pos": 4.0, "line": 2.0, "plane": 1.0},
+				{"pos": 6.0, "line": 2.0, "plane": 2.0}
+			]
+		},
+		"19": {
+			"notes": [
+				{"pos": 0.0, "line": 2.0, "plane": 1.0},
+				{"pos": 0.0, "line": 3.0, "plane": 1.0},
+				{"pos": 2.0, "line": 4.0, "plane": 2.0, "length": 6.0},
+				{"pos": 2.0, "line": 3.0, "plane": 1.0, "length": 6.0},
+				{"pos": 4.0, "line": 2.0, "plane": 2.0},
+				{"pos": 6.0, "line": 1.0, "plane": 1.0}
+			]
+		},
+		"20": {
+			"notes": [
+				{"pos": 0.0, "line": 1.0, "plane": 1.0},
+				{"pos": 0.0, "line": 2.0, "plane": 1.0},
+				{"pos": 2.0, "line": 1.0, "plane": 2.0, "length": 6.0},
+				{"pos": 2.0, "line": 4.0, "plane": 2.0, "length": 6.0},
+				{"pos": 4.0, "line": 1.0, "plane": 1.0},
+				{"pos": 4.0, "line": 2.0, "plane": 1.0},
+				{"pos": 6.0, "line": 2.0, "plane": 1.0},
+				{"pos": 6.0, "line": 3.0, "plane": 1.0}
+			]
+		},
+		"21": {
+			"notes": [
+				{"pos": 0.0, "line": 3.0, "plane": 1.0},
+				{"pos": 0.0, "line": 4.0, "plane": 1.0},
+				{"pos": 2.0, "line": 1.0, "plane": 2.0, "length": 6.0},
+				{"pos": 2.0, "line": 2.0, "plane": 1.0, "length": 6.0},
+				{"pos": 4.0, "line": 1.0, "plane": 1.0},
+				{"pos": 6.0, "line": 3.0, "plane": 2.0},
+				{"pos": 6.0, "line": 4.0, "plane": 2.0}
+			]
+		},
+		"22": {
+			"notes": [
+				{"pos": 0.0, "line": 1.0, "plane": 1.0},
+				{"pos": 0.0, "line": 2.0, "plane": 2.0},
+				{"pos": 2.0, "line": 3.0, "plane": 2.0, "length": 6.0},
+				{"pos": 2.0, "line": 4.0, "plane": 1.0, "length": 6.0},
+				{"pos": 4.0, "line": 1.0, "plane": 1.0},
+				{"pos": 6.0, "line": 1.0, "plane": 1.0},
+				{"pos": 6.0, "line": 1.0, "plane": 2.0}
+			]
+		},
+		"23": {
+			"notes": [
+				{"pos": 0.0, "line": 4.0, "plane": 1.0},
+				{"pos": 0.0, "line": 3.0, "plane": 2.0},
+				{"pos": 2.0, "line": 2.0, "plane": 2.0, "length": 6.0},
+				{"pos": 2.0, "line": 1.0, "plane": 1.0, "length": 6.0},
+				{"pos": 4.0, "line": 4.0, "plane": 1.0},
+				{"pos": 6.0, "line": 4.0, "plane": 1.0},
+				{"pos": 6.0, "line": 4.0, "plane": 2.0}
 			]
 		}
 	}

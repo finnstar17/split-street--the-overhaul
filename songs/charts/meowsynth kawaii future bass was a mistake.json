@@ -5,11 +5,12 @@
 	"cover": "res://images/song_covers/meowsynth kawaii future bass was a mistake.jpg",
 	"bpm": 166.0,
 	"spacing": 4.0,
-	"offset": 0.0,
+	"note_offset": 0.12,
+	"song_offset": 0.06,
 	"note_data": {
 		"1": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "length": 15.0},
+				{"pos": 0.0, "line": 1.0, "plane": 1.0, "length": 16.0},
 				{"pos": 0.0, "line": 3.0, "plane": 1.0}
 			]
 		},
@@ -19,14 +20,14 @@
 		},
 		"3": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "length": 7.0},
+				{"pos": 0.0, "line": 4.0, "plane": 1.0, "length": 8.0},
 				{"pos": 0.0, "line": 2.0, "plane": 1.0}
 			]
 		},
 		"4": {
 			"notes": [
-				{"pos": 0.0, "line": 2.0, "plane": 1.0, "length": 7.0},
-				{"pos": 0.0, "line": 3.0, "plane": 1.0, "length": 7.0}
+				{"pos": 0.0, "line": 2.0, "plane": 1.0, "length": 8.0},
+				{"pos": 0.0, "line": 3.0, "plane": 1.0, "length": 8.0}
 			]
 		},
 		"5": {

@@ -22,6 +22,9 @@ func _ready():
 	TrackAutoload.inputs = inputs
 
 func _input(event):
+	if event.is_echo():
+		return
+		
 	if event is InputEventKey and debug_auto == false:
 		var key = "gp_" + event.as_text_keycode().to_lower()
 		if key in notes:
@@ -42,6 +45,7 @@ func _input(event):
 				set_color(meshes, 0.15)
 				note.set_meta("active", false)
 				note.end_time = TrackAutoload.input_time
+				note.let_go()
 
 func _process(_delta):
 	if debug_auto == true:
@@ -53,6 +57,7 @@ func _process(_delta):
 			note.press_time = TrackAutoload.input_time
 			#print("pressed " + str(note.press_time))
 			note.check_instant()
+
 		
 
 func set_color(meshes : Array, value : float):

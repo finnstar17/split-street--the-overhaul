@@ -14,12 +14,14 @@ var nearest_index = null
 var margin = 0.3
 var check_instant_margin = 0.5
 
+var song_offset = 0.0
+
 func check_notes(s_margin, count_early):
 	var hit_delay = 0.0
 	lowest_num = INF
 	nearest_node = null
 	for note_index in input_table:
-		var real_time = input_table[note_index] + SettingsAutoload.offset
+		var real_time = input_table[note_index] + song_offset - AudioServer.get_output_latency() + AudioServer.get_time_to_next_mix()
 		if (press_time <= real_time + s_margin) and (press_time >= real_time - (s_margin * count_early)):
 			if real_time < lowest_num:
 				lowest_num = real_time
@@ -28,13 +30,27 @@ func check_notes(s_margin, count_early):
 				hit_delay = real_time - press_time
 
 	if nearest_node:
+		nearest_node.picker = self
 		nearest_node.collect()
 		note_func()
 
 		input_table.erase(nearest_index)
 		note_table.erase(nearest_index)
 
-		print(hit_delay)
+		var delay_abs = abs(hit_delay)
+		if delay_abs < 0.05:
+			print("Perfect!")
+		elif delay_abs >= 0.05 and delay_abs < 0.075:
+			print("Great!")
+		elif delay_abs >= 0.075 and delay_abs < 0.1:
+			print("Good!")
+		else:
+			print("Bad!")
+
+func let_go():
+	if nearest_node:
+		nearest_node.holding = false
+		print(end_time)
 
 func check_instant():
 	check_notes(check_instant_margin, 0)

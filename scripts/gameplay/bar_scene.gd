@@ -1,6 +1,7 @@
 extends Node3D
 
 var note_scene = preload("res://scenes/gameplay/note_scene.tscn")
+var song_offset = 0.0
 var note_data = {}
 var inputs = TrackAutoload.inputs
 
@@ -19,11 +20,15 @@ func _ready():
 				var note_index = str(TrackAutoload.current_id)
 				input.input_table[note_index] = (int(name) * 4 * mili) + (note["pos"] * mili * 0.5) - 1.333
 				input.note_table[note_index] = new_note
+				input.song_offset = song_offset
+				new_note.real_time = input.input_table[note_index]
 
 
 func create_note(note):
 	var new_note = note_scene.instantiate()
 	new_note.xpos = (note["line"] - 2.5) * 0.4
 	new_note.zpos = note["pos"]
+	if "length" in note:
+		new_note.length = note["length"] * 2.5
 	add_child(new_note)
 	return new_note

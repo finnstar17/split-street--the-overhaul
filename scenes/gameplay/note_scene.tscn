@@ -6,6 +6,16 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_ieleu"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3kiaw"]
+resource_local_to_scene = true
+blend_mode = 1
+shading_mode = 0
+distance_fade_mode = 1
+distance_fade_min_distance = 16.0
+distance_fade_max_distance = 4.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3kiaw"]
+
 [node name="NoteScene" type="Node3D" unique_id=1713396208]
 script = ExtResource("1_ieleu")
 
@@ -13,7 +23,7 @@ script = ExtResource("1_ieleu")
 transform = Transform3D(0.133, 0, 0, 0, 1, 0, 0, 0, 0.133, 0, 0, 0)
 visible = false
 material_override = ExtResource("2_3kiaw")
-visibility_range_end = 12.0
+visibility_range_end = 16.0
 visibility_range_end_margin = 4.0
 visibility_range_fade_mode = 1
 mesh = ExtResource("1_mlvxp")
@@ -21,7 +31,17 @@ mesh = ExtResource("1_mlvxp")
 [node name="PlainNote" type="MeshInstance3D" parent="." unique_id=869472144]
 transform = Transform3D(0.4, 0, 0, 0, 0.03, 0, 0, 0, 0.4, 0, 0, 0)
 material_override = ExtResource("2_3kiaw")
-visibility_range_end = 12.0
+visibility_range_end = 16.0
 visibility_range_end_margin = 4.0
 visibility_range_fade_mode = 1
 mesh = SubResource("BoxMesh_ieleu")
+
+[node name="HoldNote" type="Node3D" parent="." unique_id=1701302228]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.2)
+visible = false
+
+[node name="HoldMesh" type="MeshInstance3D" parent="HoldNote" unique_id=57892194]
+transform = Transform3D(0.4, 0, 0, 0, 0.03, 0, 0, 0, 0.4, 0, 0, 0.2)
+material_override = SubResource("StandardMaterial3D_3kiaw")
+transparency = 0.75
+mesh = SubResource("BoxMesh_3kiaw")

@@ -5,7 +5,8 @@
 	"cover": "res://images/song_covers/nano love.jpg",
 	"bpm": 130.0,
 	"spacing": 4.0,
-	"offset": 0.0,
+	"note_offset": 0.12,
+	"song_offset": -0.39,
 	"note_data": {
 		"1": {
 			"notes": [

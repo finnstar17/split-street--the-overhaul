@@ -32,12 +32,11 @@ func _ready():
 func _process(delta):
 	var move_add = 0
 
-	if player.playing and not started and delay == 0.0:
-		started = true
-		delay = player.get_playback_position() + AudioServer.get_time_to_next_mix() - TrackAutoload.time_start
+	if player.playing and started:
+		started = false
 		move_add = delay
-		print("delay : " + str(delay))
 		TrackAutoload.delay = delay
+		print("Delay: " + str(delay))
 
 	TrackAutoload.calc_pos_delta()
 	
@@ -66,16 +65,18 @@ func create_bar(bar : Node3D):
 	if bar_data:
 		var new_bar = bar_scene.instantiate()
 		new_bar.name = str(bar_count)
+		new_bar.song_offset = chart_data["song_offset"]
 		new_bar.note_data = note_data[str(bar_count)]
 		new_bar.position.z = old_bar_pos - ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed)
 	
 		if bar_count == 1:
-			new_bar.position.z += (SettingsAutoload.speed * -4) + ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed) - (SettingsAutoload.offset * SettingsAutoload.speed)
+			new_bar.position.z += (SettingsAutoload.speed * -4) + ((60 / float(TrackAutoload.bpm)) * 4 * SettingsAutoload.speed) - (chart_data["note_offset"] * SettingsAutoload.speed)
 
 		bar.add_child(new_bar)
 		bars.append(new_bar)
 
 func _on_timer_timeout() -> void:
+	delay = AudioServer.get_time_to_next_mix() + AudioServer.get_output_latency()
 	player.play()
-	TrackAutoload.time_start = delay
+	started = true
 	print("playing")

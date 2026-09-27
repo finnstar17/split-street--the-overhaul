@@ -5,10 +5,14 @@
 	"cover": "res://images/song_covers/Trick Room.jpg",
 	"bpm": 160.0,
 	"spacing": 4.0,
-	"offset": 0.0,
+	"note_offset": 0.12,
+	"song_offset": 0.015,
 	"note_data": {
 		"1": {
 			"notes": [
+				{"pos": 4.0, "line": 2, "plane": 1, "length": 4.0},
+				{"pos": 8.0, "line": 3, "plane": 1, "length": 4.0},
+				{"pos": 12.0, "line": 4, "plane": 1, "length": 4.0}
 			]
 		},
 		"2": {
@@ -17,6 +21,10 @@
 		},
 		"3": {
 			"notes": [
+				{"pos": 0.0, "line": 1, "plane": 1, "length": 4.0},
+				{"pos": 4.0, "line": 2, "plane": 1, "length": 4.0},
+				{"pos": 8.0, "line": 3, "plane": 1, "length": 4.0},
+				{"pos": 12.0, "line": 4, "plane": 1, "length": 4.0}
 			]
 		},
 		"4": {
@@ -25,225 +33,225 @@
 		},
 		"5": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0},
-				{"pos": 3.0, "line": 4.0, "plane": 1.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0},
-				{"pos": 7.0, "line": 3.0, "plane": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1},
+				{"pos": 1.0, "line": 2, "plane": 1},
+				{"pos": 3.0, "line": 4, "plane": 1},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 6.0, "line": 4, "plane": 2},
+				{"pos": 7.0, "line": 3, "plane": 2}
 			]
 		},
 		"6": {
 			"notes": [
-				{"pos": 1.0, "line": 1.0, "plane": 2.0},
-				{"pos": 2.0, "line": 2.0, "plane": 2.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0}
+				{"pos": 1.0, "line": 1, "plane": 2},
+				{"pos": 2.0, "line": 2, "plane": 2},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 5.0, "line": 4, "plane": 1}
 			]
 		},
 		"7": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0},
-				{"pos": 3.0, "line": 4.0, "plane": 1.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 6.0, "line": 1.0, "plane": 2.0},
-				{"pos": 7.0, "line": 2.0, "plane": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1},
+				{"pos": 1.0, "line": 2, "plane": 1},
+				{"pos": 3.0, "line": 4, "plane": 1},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 6.0, "line": 1, "plane": 2},
+				{"pos": 7.0, "line": 2, "plane": 2}
 			]
 		},
 		"8": {
 			"notes": [
-				{"pos": 1.0, "line": 4.0, "plane": 2.0},
-				{"pos": 2.0, "line": 3.0, "plane": 2.0},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0}
+				{"pos": 1.0, "line": 4, "plane": 2},
+				{"pos": 2.0, "line": 3, "plane": 2},
+				{"pos": 4.0, "line": 2, "plane": 1},
+				{"pos": 5.0, "line": 1, "plane": 1}
 			]
 		},
 		"9": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0},
-				{"pos": 3.0, "line": 2.0, "plane": 1.0},
-				{"pos": 4.0, "line": 4.0, "plane": 1.0},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0},
-				{"pos": 7.0, "line": 3.0, "plane": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1},
+				{"pos": 1.0, "line": 2, "plane": 1},
+				{"pos": 3.0, "line": 2, "plane": 1},
+				{"pos": 4.0, "line": 4, "plane": 1},
+				{"pos": 6.0, "line": 4, "plane": 2},
+				{"pos": 7.0, "line": 3, "plane": 2}
 			]
 		},
 		"10": {
 			"notes": [
-				{"pos": 1.0, "line": 3.0, "plane": 2.0},
-				{"pos": 2.0, "line": 1.0, "plane": 2.0},
-				{"pos": 4.0, "line": 1.0, "plane": 1.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0}
+				{"pos": 1.0, "line": 3, "plane": 2},
+				{"pos": 2.0, "line": 1, "plane": 2},
+				{"pos": 4.0, "line": 1, "plane": 1},
+				{"pos": 5.0, "line": 2, "plane": 1}
 			]
 		},
 		"11": {
 			"notes": [
-				{"pos": 0.0, "line": 3.0, "plane": 1.0},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0},
-				{"pos": 3.0, "line": 2.0, "plane": 1.0},
-				{"pos": 4.0, "line": 1.0, "plane": 1.0},
-				{"pos": 6.0, "line": 2.0, "plane": 2.0},
-				{"pos": 7.0, "line": 1.0, "plane": 2.0}
+				{"pos": 0.0, "line": 3, "plane": 1},
+				{"pos": 1.0, "line": 4, "plane": 1},
+				{"pos": 3.0, "line": 2, "plane": 1},
+				{"pos": 4.0, "line": 1, "plane": 1},
+				{"pos": 6.0, "line": 2, "plane": 2},
+				{"pos": 7.0, "line": 1, "plane": 2}
 			]
 		},
 		"12": {
 			"notes": [
-				{"pos": 1.0, "line": 3.0, "plane": 2.0},
-				{"pos": 2.0, "line": 4.0, "plane": 2.0},
-				{"pos": 4.0, "line": 4.0, "plane": 1.0},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0}
+				{"pos": 1.0, "line": 3, "plane": 2},
+				{"pos": 2.0, "line": 4, "plane": 2},
+				{"pos": 4.0, "line": 4, "plane": 1},
+				{"pos": 5.0, "line": 1, "plane": 1}
 			]
 		},
 		"13": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0},
-				{"pos": 3.0, "line": 2.0, "plane": 2.0},
-				{"pos": 4.0, "line": 4.0, "plane": 2.0},
-				{"pos": 6.0, "line": 4.0, "plane": 1.0},
-				{"pos": 7.0, "line": 3.0, "plane": 1.0}
+				{"pos": 0.0, "line": 1, "plane": 2},
+				{"pos": 1.0, "line": 2, "plane": 2},
+				{"pos": 3.0, "line": 2, "plane": 2},
+				{"pos": 4.0, "line": 4, "plane": 2},
+				{"pos": 6.0, "line": 4, "plane": 1},
+				{"pos": 7.0, "line": 3, "plane": 1}
 			]
 		},
 		"14": {
 			"notes": [
-				{"pos": 1.0, "line": 3.0, "plane": 1.0},
-				{"pos": 2.0, "line": 1.0, "plane": 1.0},
-				{"pos": 4.0, "line": 1.0, "plane": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 2.0}
+				{"pos": 1.0, "line": 3, "plane": 1},
+				{"pos": 2.0, "line": 1, "plane": 1},
+				{"pos": 4.0, "line": 1, "plane": 2},
+				{"pos": 5.0, "line": 2, "plane": 2}
 			]
 		},
 		"15": {
 			"notes": [
-				{"pos": 0.0, "line": 3.0, "plane": 2.0},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0},
-				{"pos": 3.0, "line": 2.0, "plane": 2.0},
-				{"pos": 4.0, "line": 1.0, "plane": 2.0},
-				{"pos": 6.0, "line": 2.0, "plane": 1.0},
-				{"pos": 7.0, "line": 1.0, "plane": 1.0}
+				{"pos": 0.0, "line": 3, "plane": 2},
+				{"pos": 1.0, "line": 4, "plane": 2},
+				{"pos": 3.0, "line": 2, "plane": 2},
+				{"pos": 4.0, "line": 1, "plane": 2},
+				{"pos": 6.0, "line": 2, "plane": 1},
+				{"pos": 7.0, "line": 1, "plane": 1}
 			]
 		},
 
 		"16": {
 			"notes": [
-				{"pos": 1.0, "line": 3.0, "plane": 1.0},
-				{"pos": 2.0, "line": 4.0, "plane": 1.0},
-				{"pos": 4.0, "line": 4.0, "plane": 2.0},
-				{"pos": 5.0, "line": 1.0, "plane": 2.0}
+				{"pos": 1.0, "line": 3, "plane": 1},
+				{"pos": 2.0, "line": 4, "plane": 1},
+				{"pos": 4.0, "line": 4, "plane": 2},
+				{"pos": 5.0, "line": 1, "plane": 2}
 			]
 		},
 		"17": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 3.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 6.0, "line": 2.0, "plane": 1.0, "type": 2}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 3.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 6.0, "line": 2, "plane": 1, "type": 2}
 			]
 		},
 		"18": {
 			"notes": [
-				{"pos": 1.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0},
-				{"pos": 6.0, "line": 4.0, "plane": 1.0}
+				{"pos": 1.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 4.0, "line": 2, "plane": 1},
+				{"pos": 6.0, "line": 4, "plane": 1}
 			]
 		},
 		"19": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 3.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 6.0, "line": 2.0, "plane": 2.0, "type": 2}
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 3.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 6.0, "line": 2, "plane": 2, "type": 2}
 			]
 		},
 		"20": {
 			"notes": [
-				{"pos": 1.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 4.0, "line": 2.0, "plane": 2.0},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0}
+				{"pos": 1.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 4.0, "line": 2, "plane": 2},
+				{"pos": 6.0, "line": 4, "plane": 2}
 			]
 		},
 		"21": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 3.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 6.0, "line": 3.0, "plane": 1.0, "type": 2}
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 3.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 6.0, "line": 3, "plane": 1, "type": 2}
 			]
 		},
 		"22": {
 			"notes": [
-				{"pos": 1.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 6.0, "line": 1.0, "plane": 1.0}
+				{"pos": 1.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 6.0, "line": 1, "plane": 1}
 			]
 		},
 		"23": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 3.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 6.0, "line": 3.0, "plane": 2.0, "type": 2}
+				{"pos": 0.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 3.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 6.0, "line": 3, "plane": 2, "type": 2}
 			]
 		},
 		"24": {
 			"notes": [
-				{"pos": 1.0, "line": 2.0, "plane": 2.0, "type": 2},
-				{"pos": 4.0, "line": 3.0, "plane": 2.0},
-				{"pos": 6.0, "line": 1.0, "plane": 2.0}
+				{"pos": 1.0, "line": 2, "plane": 2, "type": 2},
+				{"pos": 4.0, "line": 3, "plane": 2},
+				{"pos": 6.0, "line": 1, "plane": 2}
 			]
 		},
 		"25": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "length": 2.0},
-				{"pos": 0.0, "line": 3.0, "plane": 1.0},
-				{"pos": 3.0, "line": 4.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0},
-				{"pos": 6.0, "line": 1.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "length": 2.0},
+				{"pos": 0.0, "line": 3, "plane": 1},
+				{"pos": 3.0, "line": 4, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 2, "plane": 1},
+				{"pos": 6.0, "line": 1, "plane": 1, "length": 2.0}
 			]
 		},
 		"26": {
 			"notes": [
-				{"pos": 0.0, "line": 3.0, "plane": 1.0},
-				{"pos": 2.0, "line": 4.0, "plane": 2.0},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0},
-				{"pos": 6.0, "line": 3.0, "plane": 2.0, "length": 6.0}
+				{"pos": 0.0, "line": 3, "plane": 1},
+				{"pos": 2.0, "line": 4, "plane": 2},
+				{"pos": 4.0, "line": 2, "plane": 1},
+				{"pos": 5.0, "line": 1, "plane": 1},
+				{"pos": 6.0, "line": 3, "plane": 2, "length": 6.0}
 			]
 		},
 		"27": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0},
-				{"pos": 6.0, "line": 2.0, "plane": 1.0, "length": 4.0}
+				{"pos": 0.0, "line": 1, "plane": 2},
+				{"pos": 5.0, "line": 4, "plane": 1},
+				{"pos": 6.0, "line": 2, "plane": 1, "length": 4.0}
 			]
 		},
 		"28": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 2.0},
-				{"pos": 2.0, "line": 1.0, "plane": 1.0, "length": 6.0},
-				{"pos": 5.0, "line": 3.0, "plane": 1.0}
+				{"pos": 0.0, "line": 4, "plane": 2},
+				{"pos": 2.0, "line": 1, "plane": 1, "length": 6.0},
+				{"pos": 5.0, "line": 3, "plane": 1}
 			]
 		},
 		"29": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 2.0, "length": 2.0},
-				{"pos": 0.0, "line": 3.0, "plane": 2.0},
-				{"pos": 3.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 3.0, "line": 2.0, "plane": 1.0},
-				{"pos": 6.0, "line": 2.0, "plane": 2.0, "length": 2.0},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 4, "plane": 2, "length": 2.0},
+				{"pos": 0.0, "line": 3, "plane": 2},
+				{"pos": 3.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 3.0, "line": 2, "plane": 1},
+				{"pos": 6.0, "line": 2, "plane": 2, "length": 2.0},
+				{"pos": 6.0, "line": 4, "plane": 2, "length": 2.0}
 			]
 		},
 		"30": {
 			"notes": [
-				{"pos": 2.0, "line": 1.0, "plane": 2.0, "length": 2.0},
-				{"pos": 2.0, "line": 4.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 3.0, "plane": 1.0, "length": 2.0}
+				{"pos": 2.0, "line": 1, "plane": 2, "length": 2.0},
+				{"pos": 2.0, "line": 4, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 2, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 3, "plane": 1, "length": 2.0}
 			]
 		},
 		"31": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "length": 4.0},
-				{"pos": 0.0, "line": 3.0, "plane": 2.0, "length": 4.0},
-				{"pos": 6.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 6.0, "line": 2.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "length": 4.0},
+				{"pos": 0.0, "line": 3, "plane": 2, "length": 4.0},
+				{"pos": 6.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 6.0, "line": 2, "plane": 1, "length": 2.0}
 			]
 		},
 		"32": {
@@ -252,363 +260,363 @@
 		},
 		"33": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0}
 			]
 		},
 		"34": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 2, "length": 2.0}
 			]
 		},
 		"35": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0},
-				{"pos": 3.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 6.0, "line": 1.0, "plane": 1.0},
-				{"pos": 7.0, "line": 1.0, "plane": 1.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 2},
+				{"pos": 3.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 6.0, "line": 1, "plane": 1},
+				{"pos": 7.0, "line": 1, "plane": 1}
 			]
 		},
 		"36": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 4.0, "line": 2, "plane": 1},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0}
 			]
 		},
 		"37": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 2, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0}
 			]
 		},
 		"38": {
 			"notes": [
-				{"pos": 0.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 2, "length": 2.0}
 			]
 		},
 		"39": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0},
-				{"pos": 3.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0},
-				{"pos": 7.0, "line": 4.0, "plane": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 2},
+				{"pos": 3.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 6.0, "line": 4, "plane": 2},
+				{"pos": 7.0, "line": 4, "plane": 2}
 			]
 		},
 		"40": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0},
-				{"pos": 4.0, "line": 1.0, "plane": 2.0},
-				{"pos": 4.0, "line": 4.0, "plane": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 1},
+				{"pos": 4.0, "line": 1, "plane": 2},
+				{"pos": 4.0, "line": 4, "plane": 2}
 			]
 		},
 		"41": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0}			
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0}			
 			]
 		},
 		"42": {
 			"notes": [
-				{"pos": 0.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 2.0, "length": 2.0}			
+				{"pos": 0.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 2, "length": 2.0}			
 			]
 		},
 		"43": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0},
-				{"pos": 3.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 3.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 4.0, "line": 1.0, "plane": 1.0},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0},
-				{"pos": 6.0, "line": 1.0, "plane": 2.0},
-				{"pos": 6.0, "line": 2.0, "plane": 2.0},
-				{"pos": 7.0, "line": 1.0, "plane": 1.0},
-				{"pos": 7.0, "line": 2.0, "plane": 1.0}			
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 2},
+				{"pos": 1.0, "line": 4, "plane": 2},
+				{"pos": 3.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 3.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 4.0, "line": 1, "plane": 1},
+				{"pos": 4.0, "line": 2, "plane": 1},
+				{"pos": 6.0, "line": 1, "plane": 2},
+				{"pos": 6.0, "line": 2, "plane": 2},
+				{"pos": 7.0, "line": 1, "plane": 1},
+				{"pos": 7.0, "line": 2, "plane": 1}			
 			]
 		},
 		"44": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 2},
+				{"pos": 1.0, "line": 3, "plane": 2},
+				{"pos": 4.0, "line": 2, "plane": 1},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0}
 			]
 		},
 		"45": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 2, "length": 2.0}
 			]
 		},
 		"46": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 1.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 1, "plane": 2, "length": 2.0}
 			]
 		},
 		"47": {
 			"notes": [
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0},
-				{"pos": 1.0, "line": 1.0, "plane": 2.0},
-				{"pos": 3.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 3.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 4.0, "line": 4.0, "plane": 1.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0},
-				{"pos": 6.0, "line": 3.0, "plane": 2.0},
-				{"pos": 7.0, "line": 1.0, "plane": 1.0},
-				{"pos": 7.0, "line": 2.0, "plane": 1.0}			
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 2, "plane": 2},
+				{"pos": 1.0, "line": 1, "plane": 2},
+				{"pos": 3.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 3.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 4.0, "line": 4, "plane": 1},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 6.0, "line": 4, "plane": 2},
+				{"pos": 6.0, "line": 3, "plane": 2},
+				{"pos": 7.0, "line": 1, "plane": 1},
+				{"pos": 7.0, "line": 2, "plane": 1}			
 			]
 		},
 		"48": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0},
-				{"pos": 3.0, "line": 3.0, "plane": 1.0},
-				{"pos": 4.0, "line": 4.0, "plane": 1.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0},
-				{"pos": 6.0, "line": 3.0, "plane": 1.0},
-				{"pos": 6.5, "line": 2.0, "plane": 1.0},
-				{"pos": 7.0, "line": 3.0, "plane": 1.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 2},
+				{"pos": 1.0, "line": 4, "plane": 2},
+				{"pos": 3.0, "line": 3, "plane": 1},
+				{"pos": 4.0, "line": 4, "plane": 1},
+				{"pos": 5.0, "line": 2, "plane": 1},
+				{"pos": 6.0, "line": 3, "plane": 1},
+				{"pos": 6.5, "line": 2, "plane": 1},
+				{"pos": 7.0, "line": 3, "plane": 1}
 			]
 		},
 		"49": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 2.0},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0},
-				{"pos": 3.0, "line": 3.0, "plane": 2.0},
-				{"pos": 3.0, "line": 2.0, "plane": 1.0},
-				{"pos": 5.0, "line": 3.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 2},
+				{"pos": 1.0, "line": 4, "plane": 2},
+				{"pos": 3.0, "line": 3, "plane": 2},
+				{"pos": 3.0, "line": 2, "plane": 1},
+				{"pos": 5.0, "line": 3, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 2, "plane": 2, "length": 2.0}
 			]
 		},
 		"50": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 2, "length": 2.0}
 			]
 		},
 		"51": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0},
-				{"pos": 2.0, "line": 3.0, "plane": 1.0},
-				{"pos": 3.0, "line": 4.0, "plane": 2.0},
-				{"pos": 4.0, "line": 3.0, "plane": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 2.0},
-				{"pos": 6.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 6.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 7.0, "line": 1.0, "plane": 2.0},
-				{"pos": 7.0, "line": 4.0, "plane": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1},
+				{"pos": 1.0, "line": 2, "plane": 1},
+				{"pos": 2.0, "line": 3, "plane": 1},
+				{"pos": 3.0, "line": 4, "plane": 2},
+				{"pos": 4.0, "line": 3, "plane": 2},
+				{"pos": 5.0, "line": 2, "plane": 2},
+				{"pos": 6.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 6.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 7.0, "line": 1, "plane": 2},
+				{"pos": 7.0, "line": 4, "plane": 2}
 			]
 		},
 		"52": {
 			"notes": [
-				{"pos": 1.0, "line": 2.0, "plane": 2.0},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0},
-				{"pos": 2.0, "line": 1.0, "plane": 1.0, "length": 1.0},
-				{"pos": 2.0, "line": 4.0, "plane": 1.0, "length": 1.0},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 5.0, "line": 1.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 2.0, "length": 2.0}
+				{"pos": 1.0, "line": 2, "plane": 2},
+				{"pos": 1.0, "line": 3, "plane": 2},
+				{"pos": 2.0, "line": 1, "plane": 1, "length": 1.0},
+				{"pos": 2.0, "line": 4, "plane": 1, "length": 1.0},
+				{"pos": 4.0, "line": 2, "plane": 1},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 5.0, "line": 1, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 2, "length": 2.0}
 			]
 		},
 		"53": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 1.0},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0},
-				{"pos": 3.0, "line": 3.0, "plane": 1.0},
-				{"pos": 3.0, "line": 2.0, "plane": 1.0},
-				{"pos": 5.0, "line": 3.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 1},
+				{"pos": 1.0, "line": 4, "plane": 1},
+				{"pos": 3.0, "line": 3, "plane": 1},
+				{"pos": 3.0, "line": 2, "plane": 1},
+				{"pos": 5.0, "line": 3, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 2, "plane": 1, "length": 2.0}
 			]
 		},
 		"54": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 4.0, "line": 1.0, "plane": 1.0, "length": 3.0},
-				{"pos": 4.0, "line": 4.0, "plane": 1.0, "length": 3.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 4.0, "line": 1, "plane": 1, "length": 3.0},
+				{"pos": 4.0, "line": 4, "plane": 1, "length": 3.0}
 			]
 		},
 		"55": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0},
-				{"pos": 2.0, "line": 3.0, "plane": 2.0},
-				{"pos": 3.0, "line": 4.0, "plane": 1.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0},
-				{"pos": 6.0, "line": 1.0, "plane": 2.0},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0},
-				{"pos": 7.0, "line": 3.0, "plane": 2.0},
-				{"pos": 7.0, "line": 2.0, "plane": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2},
+				{"pos": 1.0, "line": 2, "plane": 2},
+				{"pos": 2.0, "line": 3, "plane": 2},
+				{"pos": 3.0, "line": 4, "plane": 1},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 5.0, "line": 2, "plane": 1},
+				{"pos": 6.0, "line": 1, "plane": 2},
+				{"pos": 6.0, "line": 4, "plane": 2},
+				{"pos": 7.0, "line": 3, "plane": 2},
+				{"pos": 7.0, "line": 2, "plane": 2}
 			]
 		},
 		"56": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0},
-				{"pos": 0.0, "line": 4.0, "plane": 1.0},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0, "length": 2.0},
-				{"pos": 1.0, "line": 3.0, "plane": 1.0, "length": 2.0},
-				{"pos": 4.0, "line": 1.0, "plane": 1.0},
-				{"pos": 4.0, "line": 4.0, "plane": 1.0}
+				{"pos": 0.0, "line": 1, "plane": 1},
+				{"pos": 0.0, "line": 4, "plane": 1},
+				{"pos": 1.0, "line": 2, "plane": 1, "length": 2.0},
+				{"pos": 1.0, "line": 3, "plane": 1, "length": 2.0},
+				{"pos": 4.0, "line": 1, "plane": 1},
+				{"pos": 4.0, "line": 4, "plane": 1}
 			]
 		},
 		"57": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 1.0},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0},
-				{"pos": 3.0, "line": 3.0, "plane": 1.0},
-				{"pos": 3.0, "line": 2.0, "plane": 2.0},
-				{"pos": 5.0, "line": 3.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 1},
+				{"pos": 1.0, "line": 4, "plane": 1},
+				{"pos": 3.0, "line": 3, "plane": 1},
+				{"pos": 3.0, "line": 2, "plane": 2},
+				{"pos": 5.0, "line": 3, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 2, "plane": 1, "length": 2.0}
 			]
 		},
 		"58": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0}
 			]
 		},
 		"59": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0},
-				{"pos": 1.0, "line": 2.0, "plane": 2.0},
-				{"pos": 2.0, "line": 3.0, "plane": 2.0},
-				{"pos": 3.0, "line": 4.0, "plane": 1.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0},
-				{"pos": 5.0, "line": 2.0, "plane": 1.0},
-				{"pos": 6.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 6.0, "line": 4.0, "plane": 2.0, "type": 2},
-				{"pos": 7.0, "line": 1.0, "plane": 1.0},
-				{"pos": 7.0, "line": 4.0, "plane": 1.0}
+				{"pos": 0.0, "line": 1, "plane": 2},
+				{"pos": 1.0, "line": 2, "plane": 2},
+				{"pos": 2.0, "line": 3, "plane": 2},
+				{"pos": 3.0, "line": 4, "plane": 1},
+				{"pos": 4.0, "line": 3, "plane": 1},
+				{"pos": 5.0, "line": 2, "plane": 1},
+				{"pos": 6.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 6.0, "line": 4, "plane": 2, "type": 2},
+				{"pos": 7.0, "line": 1, "plane": 1},
+				{"pos": 7.0, "line": 4, "plane": 1}
 			]
 		},
 		"60": {
 			"notes": [
-				{"pos": 1.0, "line": 2.0, "plane": 1.0},
-				{"pos": 1.0, "line": 3.0, "plane": 1.0},
-				{"pos": 2.0, "line": 1.0, "plane": 2.0, "length": 1.0},
-				{"pos": 2.0, "line": 4.0, "plane": 2.0, "length": 1.0},
-				{"pos": 4.0, "line": 2.0, "plane": 2.0},
-				{"pos": 4.0, "line": 3.0, "plane": 2.0},
-				{"pos": 5.0, "line": 1.0, "plane": 1.0, "length": 2.0},
-				{"pos": 5.0, "line": 4.0, "plane": 1.0, "length": 2.0}
+				{"pos": 1.0, "line": 2, "plane": 1},
+				{"pos": 1.0, "line": 3, "plane": 1},
+				{"pos": 2.0, "line": 1, "plane": 2, "length": 1.0},
+				{"pos": 2.0, "line": 4, "plane": 2, "length": 1.0},
+				{"pos": 4.0, "line": 2, "plane": 2},
+				{"pos": 4.0, "line": 3, "plane": 2},
+				{"pos": 5.0, "line": 1, "plane": 1, "length": 2.0},
+				{"pos": 5.0, "line": 4, "plane": 1, "length": 2.0}
 			]
 		},
 		"61": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0, "type": 2},
-				{"pos": 0.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 1.0, "plane": 2.0},
-				{"pos": 1.0, "line": 4.0, "plane": 2.0},
-				{"pos": 3.0, "line": 3.0, "plane": 2.0},
-				{"pos": 3.0, "line": 2.0, "plane": 2.0},
-				{"pos": 5.0, "line": 3.0, "plane": 2.0, "length": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 2.0, "length": 2.0}
+				{"pos": 0.0, "line": 1, "plane": 1, "type": 2},
+				{"pos": 0.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 1, "plane": 2},
+				{"pos": 1.0, "line": 4, "plane": 2},
+				{"pos": 3.0, "line": 3, "plane": 2},
+				{"pos": 3.0, "line": 2, "plane": 2},
+				{"pos": 5.0, "line": 3, "plane": 2, "length": 2.0},
+				{"pos": 5.0, "line": 2, "plane": 2, "length": 2.0}
 			]
 		},
 		"62": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "type": 2},
-				{"pos": 0.0, "line": 2.0, "plane": 2.0, "type": 2},
-				{"pos": 1.0, "line": 3.0, "plane": 1.0, "type": 2},
-				{"pos": 1.0, "line": 4.0, "plane": 1.0, "type": 2},
-				{"pos": 4.0, "line": 1.0, "plane": 2.0, "length": 3.0},
-				{"pos": 4.0, "line": 4.0, "plane": 2.0, "length": 3.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "type": 2},
+				{"pos": 0.0, "line": 2, "plane": 2, "type": 2},
+				{"pos": 1.0, "line": 3, "plane": 1, "type": 2},
+				{"pos": 1.0, "line": 4, "plane": 1, "type": 2},
+				{"pos": 4.0, "line": 1, "plane": 2, "length": 3.0},
+				{"pos": 4.0, "line": 4, "plane": 2, "length": 3.0}
 			]
 		},
 		"63": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 1.0},
-				{"pos": 1.0, "line": 2.0, "plane": 1.0},
-				{"pos": 2.0, "line": 3.0, "plane": 1.0},
-				{"pos": 3.0, "line": 4.0, "plane": 2.0},
-				{"pos": 4.0, "line": 3.0, "plane": 2.0},
-				{"pos": 5.0, "line": 2.0, "plane": 2.0},
-				{"pos": 6.0, "line": 1.0, "plane": 1.0},
-				{"pos": 6.0, "line": 4.0, "plane": 1.0},
-				{"pos": 7.0, "line": 3.0, "plane": 1.0},
-				{"pos": 7.0, "line": 2.0, "plane": 1.0}
+				{"pos": 0.0, "line": 1, "plane": 1},
+				{"pos": 1.0, "line": 2, "plane": 1},
+				{"pos": 2.0, "line": 3, "plane": 1},
+				{"pos": 3.0, "line": 4, "plane": 2},
+				{"pos": 4.0, "line": 3, "plane": 2},
+				{"pos": 5.0, "line": 2, "plane": 2},
+				{"pos": 6.0, "line": 1, "plane": 1},
+				{"pos": 6.0, "line": 4, "plane": 1},
+				{"pos": 7.0, "line": 3, "plane": 1},
+				{"pos": 7.0, "line": 2, "plane": 1}
 			]
 		},
 		"64": {
 			"notes": [
-				{"pos": 0.0, "line": 1.0, "plane": 2.0, "length": 8.0},
-				{"pos": 0.0, "line": 4.0, "plane": 2.0, "length": 8.0},
-				{"pos": 4.0, "line": 2.0, "plane": 1.0, "length": 4.0},
-				{"pos": 4.0, "line": 3.0, "plane": 1.0, "length": 4.0}
+				{"pos": 0.0, "line": 1, "plane": 2, "length": 8.0},
+				{"pos": 0.0, "line": 4, "plane": 2, "length": 8.0},
+				{"pos": 4.0, "line": 2, "plane": 1, "length": 8.0},
+				{"pos": 4.0, "line": 3, "plane": 1, "length": 8.0}
 
 			]
 		}
